@@ -11,8 +11,8 @@ urlpatterns = [
     #---------------------------#
     # UNPROTECTED API ENDPOINTS #
     # --------------------------#
-
-    # HOMEPAGE
+#btc_price caculations
+    path('stats/tsd', views.GetStatistics.as_view()name= 'btc_stadstics'), 
     path('api/version', views.VersionAPI.as_view(), name='version_api'),
 
 
